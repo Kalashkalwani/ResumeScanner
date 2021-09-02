@@ -1,0 +1,276 @@
+ <!doctype html>
+<html> 
+<head>
+ 
+<title> Analysis</title> 
+<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+
+ <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+   <style>
+    
+     
+ 
+.b-skills
+{
+	border-top: 1px solid #f9f9f9;
+	padding-top: 46px;
+	text-align: center;
+}
+
+.b-skills:last-child { margin-bottom: -30px; }
+
+.b-skills h2 { margin-bottom: 50px; font-weight: 900; text-transform: uppercase;}
+
+.skill-item
+{
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	margin-bottom: 30px;
+	color: #555;
+}
+
+.chart-container
+{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+	margin-bottom: 27px;
+}
+
+.skill-item .chart,
+.skill-item .chart canvas
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.skill-item .chart:before
+{
+	content: "";
+	width: 0;
+	height: 100%;
+}
+
+.skill-item .chart:before,
+.skill-item .percent
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.skill-item .percent
+{
+	position: relative;
+	line-height: 1;
+	font-size: 40px;
+	font-weight: 900;
+	z-index: 2;
+}
+
+.skill-item  .percent:after
+{
+	content: attr(data-after);
+	font-size: 20px;
+}
+       
+       p{
+           font-weight: 900;
+       }
+ 
+    
+    </style>
+ 
+  
+  
+ 
+</head>
+
+<body>
+ 
+  
+
+	 
+		<section id="s-team" class="section">
+			<a href="{% url 'index' %}" style="text-decoration: none;">
+			<h1 class=" font-effect-emboss" style="background-color: black; color: white; justify-content: center; display: flex; padding-top: 2%;padding-bottom: 2%; font-family: sofia;">
+			Resume Analysis</h2></a>
+
+			<div class="b-skills">
+				<div class="container">
+					
+							<br>
+					<div class="row" style="margin-left:100px;">
+						<div class="col-xs-12 col-sm-6 col-md-3" style="margin-right:100px;">
+							<div class="skill-item center-block" >
+								<div class="chart-container">
+									<div class="chart " data-percent="{{wdd}}" data-bar-color="#23afe3" >
+										<span class="percent" data-after="%">{{wdd}}</span>
+									</div>
+								</div>
+
+								<p>Web Development & Designing</p>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-3" style="margin-right:100px;">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="{{om}}" data-bar-color="#a7d212">
+										<span class="percent" data-after="%">{{om}}</span>
+									</div>
+								</div>
+
+								<p>Operations management</p>
+							</div>
+						</div>
+						
+						
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="{{sc}}" data-bar-color="#ff4241">
+										<span class="percent" data-after="%">{{sc}}</span>
+									</div>
+								</div>
+
+								<p>Supply chain</p>
+							</div>
+						 </div>
+						</div>
+						<br>
+						<div class="row" style="margin-left:100px;">
+						<div class="col-xs-12 col-sm-6 col-md-3" style="margin-right:100px;">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="{{ds}}" data-bar-color="#edc214">
+										<span class="percent" data-after="%">{{ds}}</span>
+									</div>
+								</div>
+
+								<p>Data Science & Machine Learning</p>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-3" style="margin-right:100px;">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="{{dbms}}" data-bar-color="#ff4241">
+										<span class="percent" data-after="%">{{dbms}}</span>
+									</div>
+								</div>
+
+								<p>Database Management Systems</p>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="{{pm}}" data-bar-color="#ff4241">
+										<span class="percent" data-after="%">{{pm}}</span>
+									</div>
+								</div>
+
+								<p>Project Management</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</section>
+        <br><br><br><br><br>
+    
+ 
+ 
+  <br><br><br><br>  
+  
+
+  
+  <footer class="bd-footer p-3 p-md-5 mt-0 bg-dark text-center text-sm-start" >
+	<div class="container-fluid d-flex justify-content-center" >
+		<a style=":hover:{background-color:none ;}" href="https://www.instagram.com/ritik_rizwani__/?igshid=ak2chiwof4ys"> <i class="bi bi-instagram" style="margin-right:40px; margin-left: 20px; color: rgb(241, 241, 237) ;font-size: 2rem;"></i></a>
+		<a href="https://github.com/rizwaniritik"> <i  class="bi bi-github" style="margin-right: 40px; margin-left: 20px; color: rgb(241, 241, 237) ;border-radius: 30px;font-size: 2rem;"></i></a>
+		<a href="linkedin.com/in/ritik-rizwani-3978411b3"><i class="bi bi-linkedin" style="margin-right: 40px; margin-left: 20px;color: rgb(241, 241, 237) ;border-radius: 30px;font-size: 2rem;"></i></a>
+		<a href="https://twitter.com/RizwaniRitik?s=09"><i class="bi bi-twitter" style="margin-right: 40px; margin-left: 20px;color: rgb(241, 241, 237) ;border-radius: 30px;font-size: 2rem;"></i></a>
+		
+	 </div>
+	 <div class="container-fluid d-flex justify-content-center" style="margin-top: 10px;">
+		 <p class=" font-effect-emboss" style=" font-family:  Sofia, sans-serif;font-size: 20px;" >Designed and Developed by <a href="linkedin.com/in/ritik-rizwani-3978411b3" class=" font-effect-emboss" style=" font-family: 'Akaya Kanadaka';" >S R K</a></p>
+	 </div>
+	 <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+</footer>
+  
+  
+ <script src="static/js/jquery-2.2.4.min.js"></script>
+ <script src="static/js/jquery.appear.min.js"></script>
+ <script src="static/js/jquery.easypiechart.min.js"></script> 
+ <script src="static/js/jquery.bootstrap.min.js"></script> 
+ <script>
+    'use strict';
+
+var $window = $(window);
+
+function run()
+{
+	var fName = arguments[0],
+		aArgs = Array.prototype.slice.call(arguments, 1);
+	try {
+		fName.apply(window, aArgs);
+	} catch(err) {
+		 
+	}
+};
+ 
+/* chart
+================================================== */
+function _chart ()
+{
+	$('.b-skills').appear(function() {
+		setTimeout(function() {
+			$('.chart').easyPieChart({
+				easing: 'easeOutElastic',
+				delay: 3000,
+				barColor: '#369670',
+				trackColor: '#fff',
+				scaleColor: false,
+				lineWidth: 21,
+				trackWidth: 21,
+				size: 250,
+				lineCap: 'round',
+				onStep: function(from, to, percent) {
+					this.el.children[0].innerHTML = Math.round(percent);
+				}
+			});
+		}, 150);
+	});
+};
+ 
+
+$(document).ready(function() {
+  
+	run(_chart);
+  
+    
+});
+
+
+    
+    </script>
+ 
+   
+
+
+</body>
+ 
+</html>

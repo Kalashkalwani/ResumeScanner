@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+</style>
+<body>
+    <style>
+        .jx{
+            margin-left: 22%;
+            color: burlywood;
+            background-color:brown;
+        }
+        .jxk{
+            margin-top: 2%;
+            margin-left: 17%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: brown;
+            color: burlywood;
+        }
+        .rr{
+            justify-content: center;
+           padding-left: 10%;
+           padding-top: 20%;
+            
+        }
+
+    .img img{
+
+        position: absolute; z-index: -1 ; 
+        border-radius: 20px;
+        height: 90%;
+        width: 96%;
+   
+      margin-left: 2%;
+    }
+    .img{
+        max-width: 92%;
+        
+        border-radius: 20px;
+    }
+    .pp{
+        padding-left: 10%;
+    }
+
+    @media (max-width:400px) {
+        .img img{
+            filter: blur(2px);
+            height: 50%;
+            margin-left: 2%;
+            filter: brightness(40%);
+        }
+
+    h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+        .jx{
+            margin-top: 10%;
+            margin-left: 40%;
+        }
+        .jxk{
+            margin-top: 10%;
+            margin-left: 23%;
+        }
+        p{
+            padding-left: 2%;
+        }
+        .pp{
+            padding-left: 25%;
+        }
+    }
+
+    </style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<div class="container-fluid" style="padding: 0px 0px;">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <!--<a class="navbar-brand" href="#">
+                <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Bootstrap
+            </a>-->
+        </div>
+    </nav>
+
+<form action="" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+    <div class="container-fluid "style="padding: 0px 0px;">
+        <div class="img">
+        <img  src="\static\images\ramon-salinero-vEE00Hx5d0Q-unsplash.jpg" alt="" ></div>
+        <div class=" container-fluid  rr">
+            
+            <h1  style="color: blanchedalmond;" >Get a FREE Expert Analysis of </h1>
+                  <h1 class="pp" style="color: blanchedalmond;">  Your Resume</h1>
+            <p style="color: rgb(228, 226, 224);">Expert recommendations to
+                help you create the best resume!</p>
+            </div>
+            <div>
+                <div >
+                    <div>
+                    <button class=" jx ">
+                    <input name="resume" id="email" type="file" accept="application/pdf, application/vnd.ms-excel" required/><img
+                            
+                            src="https://d31kzl7c7thvlu.cloudfront.net/image/upload.png"></button></div>
+                            <button class="jxk"
+                        >Upload
+                        Resume to Get Analysis</button>
+                        </div>
+                        
+            </div>
+            
+        </div>
+    </div>
+</div>
+</form>
+
+
+
+<footer class="bd-footer p-3 p-md-5 mt-0 bg-dark text-center text-sm-start" >
+	<div class="container-fluid d-flex justify-content-center" >
+		<a style=":hover:{background-color:none ;}" href="https://www.instagram.com/ritik_rizwani__/?igshid=ak2chiwof4ys"> <i class="bi bi-instagram" style="margin-right:40px; margin-left: 20px; color: rgb(241, 241, 237) ;font-size: 2rem;"></i></a>
+		<a href="https://github.com/rizwaniritik"> <i  class="bi bi-github" style="margin-right: 40px; margin-left: 20px; color: rgb(241, 241, 237) ;border-radius: 30px;font-size: 2rem;"></i></a>
+		<a href="linkedin.com/in/ritik-rizwani-3978411b3"><i class="bi bi-linkedin" style="margin-right: 40px; margin-left: 20px;color: rgb(241, 241, 237) ;border-radius: 30px;font-size: 2rem;"></i></a>
+		<a href="https://twitter.com/RizwaniRitik?s=09"><i class="bi bi-twitter" style="margin-right: 40px; margin-left: 20px;color: rgb(241, 241, 237) ;border-radius: 30px;font-size: 2rem;"></i></a>
+		
+	 </div>
+	 <div class="container-fluid d-flex justify-content-center" style="margin-top: 10px;">
+		 <p class=" font-effect-emboss" style=" font-family:  Sofia, sans-serif;font-size: 20px;" >Designed and Developed by <a href="linkedin.com/in/ritik-rizwani-3978411b3" class=" font-effect-emboss" style=" font-family: 'Akaya Kanadaka';" >S R K</a></p>
+	 </div>
+	 <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+</footer>
+  
+</body>
+
+</html>
+
+
+
+
